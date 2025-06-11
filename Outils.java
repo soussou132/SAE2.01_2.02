@@ -2,7 +2,6 @@ package com.example.perso;
 
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
-
 import java.util.Random;
 import java.util.Scanner;
 
