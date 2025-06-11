@@ -6,6 +6,7 @@ public class Animal {
     String type;
     boolean fuite;
 
+    
     Animal(String type, Position pos) {
         this.type = type;
         this.pos = pos;
