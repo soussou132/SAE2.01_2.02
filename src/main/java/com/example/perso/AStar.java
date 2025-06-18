@@ -72,7 +72,7 @@ public class AStar {
         return new ArrayList<>();
     }
 
-    private static List<Position> cheminFinal(Node fin) {
+    public static List<Position> cheminFinal(Node fin) {
         List<Position> c = new ArrayList<>();
         while (fin.parent != null) {
             c.addFirst(fin.pos);
@@ -81,7 +81,7 @@ public class AStar {
         return c;
     }
 
-    private static boolean estPosiValid(Position pos, boolean mouton) {
+    public static boolean estPosiValid(Position pos, boolean mouton) {
         if (!pos.estValide(Outils.lignes, Outils.colonnes)) return false;
 
         char c = Outils.labyrinthe[pos.ligne][pos.colonne];

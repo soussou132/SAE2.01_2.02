@@ -89,7 +89,7 @@ public class Gameplay {
         stage.setTitle("Mange-moi si tu peux ! - Jeu en cours");
     }
 
-    private void afficherLabyrinthe() {
+    public void afficherLabyrinthe() {
         gamePane.getChildren().clear();
 
         double cellSize = Math.min(600.0 / Outils.lignes, 600.0 / Outils.colonnes);
@@ -164,7 +164,7 @@ public class Gameplay {
         }
     }
 
-    private void jouerTour() {
+    public void jouerTour() {
         if (jeuTermine) return;
         Animal animalActuel = tourMouton ? Outils.mouton : Outils.loup;
         if (tourMouton) {
@@ -422,7 +422,7 @@ public class Gameplay {
         return pos.equals(Outils.sortie);
     }
 
-    private void mettreAJourStats() {
+    public void mettreAJourStats() {
         statsPanel.getChildren().clear();
 
         Label titre = new Label("STATISTIQUES");
@@ -491,7 +491,7 @@ public class Gameplay {
         }
     }
 
-    private void retourMenu() {
+    public void retourMenu() {
         numeroTour = 1;
         jeuTermine = false;
         tourMouton = true;

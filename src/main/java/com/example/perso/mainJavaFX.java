@@ -442,7 +442,7 @@ public class mainJavaFX extends Application {
         }
     }
 
-    private void lancerJeu(Stage stage, String methodeMouton, String methodeLoup) {
+    public void lancerJeu(Stage stage, String methodeMouton, String methodeLoup) {
         if (jeuLance) return;
         jeuLance = true;
 

@@ -103,7 +103,7 @@ public class ImportExport {
         }
     }
 
-    private static char getChar(int i, int j) {
+    public static char getChar(int i, int j) {
         Position pos = new Position(i, j);
 
         if (Outils.mouton != null && Outils.mouton.pos.equals(pos)) {
