@@ -1,16 +1,20 @@
 package com.example.perso;
 
 public class Animal {
+    String type;
     Position pos;
     int vitesse;
-    String type;
     boolean fuite;
 
-    
-    Animal(String type, Position pos) {
+    public Animal(String type, Position pos) {
         this.type = type;
         this.pos = pos;
-        this.vitesse = type.equals("Mouton") ? 2 : 3;
+        this.vitesse = switch (type) {
+            case "Mouton", "O" -> 2;
+            case "Loup", "L" -> 3;
+            default -> 2;
+        };
         this.fuite = false;
     }
+
 }
