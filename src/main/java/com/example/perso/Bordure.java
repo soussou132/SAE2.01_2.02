@@ -15,5 +15,4 @@ public class Bordure {
                 c == 0 ||           // Bord gauche
                 c == nbC - 1;       // Bord bat
     }
-
 }

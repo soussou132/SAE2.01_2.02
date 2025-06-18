@@ -9,7 +9,6 @@ public class AStar {
         Position pos;
         int g, h, f;
 
-
         public Node(Position p, int g, int h, Node parent) {
             this.pos = p;
             this.g = g;
